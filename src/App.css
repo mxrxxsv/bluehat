@@ -7,7 +7,8 @@
 
 body, html{
   background-color: #f4f6f6;
-  overflow: hidden;
+  overflow: auto;
+  height: 100%;
 }
 
 nav{

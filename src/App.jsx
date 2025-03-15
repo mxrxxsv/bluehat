@@ -88,7 +88,7 @@ function App() {
         </p>
         
         <Link className='absolute h-13 w-90 bg-[#FFFFFF] border-2 border-solid rounded-[20px] text-start pt-3 pl-4 shadow-md border-[#89A8B2] opacity-80
-                           -top-[-160vw] left-[1vw]
+                           -top-[-160vw] left-[2vw]
                            md:-top-[-38vw] md:left-[53.5vw] '>
           Any Worker Field <span className='ml-45'>⋮</span>
         </Link>
