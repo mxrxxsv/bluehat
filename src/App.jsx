@@ -9,9 +9,6 @@ function App() {
 
   return (
     <>
-
-
-
       <nav className="fixed w-full z-20 top-0 start-0 pt-4">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pt-4 p-4">
           <a href="https://flowbite.com/" className="flex items-center space-x-3 rtl:space-x-reverse">
@@ -96,14 +93,7 @@ function App() {
           Any Worker Field <span className='ml-45'>⋮</span>
         </Link>
 
-
-
-
       </div>
-
-
-
-
 
     </>
   )

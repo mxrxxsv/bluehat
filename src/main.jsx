@@ -6,14 +6,14 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Signup from './Singup.jsx';
+import Singup from './Singup.jsx';
 import WorkerSignup from './WorkerSignup.jsx';
 import ClientSignup from './ClientSignup.jsx';
 import WorkerQuestion from './WorkerQuestion.jsx';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/bluehat",
     element: <App />,
   },
   {
