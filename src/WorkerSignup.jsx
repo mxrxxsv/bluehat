@@ -54,9 +54,9 @@ const WorkerSignup = () => {
                     </label>
                 </div>
 
-                <button type="submit" className="w-full sm:w-auto bg-sky-500 hover:bg-sky-600 text-white font-medium rounded-lg text-sm px-5 py-2.5 text-center focus:ring-4 focus:outline-none focus:ring-blue-300">
+                <Link to="/workerquestion" type="submit" className="w-full sm:w-auto bg-sky-500 hover:bg-sky-600 text-white font-medium rounded-lg text-sm px-5 py-2.5 text-center focus:ring-4 focus:outline-none focus:ring-blue-300">
                     Create account
-                </button>
+                </Link>
 
             </form>
 

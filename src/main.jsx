@@ -9,6 +9,7 @@ import {
 import Signup from './Singup.jsx';
 import WorkerSignup from './WorkerSignup.jsx';
 import ClientSignup from './ClientSignup.jsx';
+import WorkerQuestion from './WorkerQuestion.jsx';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
     element: <ClientSignup />
 
   },
+  {
+    path: "/workerquestion",
+    element: <WorkerQuestion />
+  }
 ]);
 
 createRoot(document.getElementById('root')).render(
