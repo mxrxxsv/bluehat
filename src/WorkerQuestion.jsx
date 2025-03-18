@@ -55,8 +55,8 @@ const WorkerQuestion = () => {
 
 
     useEffect(() => {
-            window.scrollTo(0, 0);
-        }, []);
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <>
@@ -117,7 +117,8 @@ const WorkerQuestion = () => {
                                         ))}
                                     </>
                                 )}
-                                
+
+                                <button onClick={handlePrevStep} className="bg-neutral-700 hover:bg-gray-400 text-white px-6 py-2 rounded-md mr-2 cursor-pointer">Previous</button>
                                 <button onClick={handleNextStep} className="bg-sky-500 hover:bg-[#ADD8F5] text-white px-6 py-2 rounded-md cursor-pointer">Next Step</button>
                             </div>
 
@@ -147,6 +148,7 @@ const WorkerQuestion = () => {
                                 <label>Provide a brief description of your work experience:</label>
                                 <textarea value={experience} onChange={(e) => setExperience(e.target.value)} className="w-full px-4 py-2 bg-gray-50 border-1 border-gray-300 rounded-lg mb-4"></textarea>
 
+                                <button onClick={handlePrevStep} className="bg-neutral-700 hover:bg-gray-400 text-white px-6 py-2 rounded-md mr-2 cursor-pointer">Previous</button>
                                 <button onClick={handleNextStep} className="bg-sky-500 hover:bg-[#ADD8F5] text-white px-6 py-2 rounded-md cursor-pointer">Next Step</button>
                             </div>
 
