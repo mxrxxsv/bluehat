@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import './App.css';
 import logo from './assets/BlueHat_logo.png';
 import { Link } from "react-router-dom";
@@ -52,6 +52,11 @@ const WorkerQuestion = () => {
             reader.readAsDataURL(file);
         }
     };
+
+
+    useEffect(() => {
+            window.scrollTo(0, 0);
+        }, []);
 
     return (
         <>
