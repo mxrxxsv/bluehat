@@ -36,10 +36,12 @@ const WorkerQuestion = () => {
             setSubmittedName(name);
         }
         setStep((prev) => prev + 1);
+        window.scrollTo(0, 0);
     };
 
     const handlePrevStep = () => {
         setStep((prev) => prev - 1);
+        window.scrollTo(0, 0);
     };
 
     const handleImageUpload = (event, setImage) => {
@@ -52,6 +54,8 @@ const WorkerQuestion = () => {
             reader.readAsDataURL(file);
         }
     };
+
+
 
 
     useEffect(() => {
