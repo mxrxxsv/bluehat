@@ -1,13 +1,13 @@
 import React from "react";
 import './App.css';
 import logo from './assets/BlueHat_logo.png';
-import { Link, ScrollRestoration } from "react-router-dom";
+import { Link} from "react-router-dom";
 
 
 const ClientSignup = () => {
     return (
         <>
-            <ScrollRestoration />        
+        `   
             <nav className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pt-4 pt-8 pl-4">
                 <Link to="/bluehat">
                     <div className="flex items-center space-x-3">
