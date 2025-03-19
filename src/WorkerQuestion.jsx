@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import './App.css';
 import logo from './assets/BlueHat_logo.png';
 import { Link } from "react-router-dom";
@@ -36,12 +36,11 @@ const WorkerQuestion = () => {
             setSubmittedName(name);
         }
         setStep((prev) => prev + 1);
-        window.scrollTo(0, 0);
     };
 
     const handlePrevStep = () => {
         setStep((prev) => prev - 1);
-        window.scrollTo(0, 0);
+
     };
 
     const handleImageUpload = (event, setImage) => {
@@ -55,9 +54,6 @@ const WorkerQuestion = () => {
         }
     };
 
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
 
     return (
         <>
