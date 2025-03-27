@@ -68,7 +68,7 @@ const FindWork = () => {
                 <div className="flex flex-row overflow-auto scrollbar-hide whitespace-nowrap snap-x snap-mandatory mx-5 mt-4 md:mx-80 md:my-8 gap-2">
                     {["Location", "Job Type", "Industry", "Requirement", "Salary"].map((filter) => (
                         <div key={filter} className="relative">
-                            <button 
+                            <button
                                 ref={(el) => (buttonRefs.current[filter] = el)}
                                 onClick={() => toggleDropdown(filter)}
                                 className="bg-white hover:bg-[#f6f6f6] rounded-[20px] px-5 py-2.5 border border-[#89A8B2] flex items-center">
@@ -95,6 +95,31 @@ const FindWork = () => {
                         </ul>
                     </div>
                 )}
+            </div>
+
+            <div className="mx-6 md:ml-80">
+                <p className="text-[24px]">Job's you might like</p>
+            </div>
+
+            <div className="mx-6 md:mx-80">
+                <hr className="bg-white" />
+
+                <p className="text-[14px] md:text-[16px] pt-4 font-light">1 day ago</p>
+                <p className="text-[16px] md:text-[20px] font-light">Shortage fuse causes power outage sala.</p>
+
+                <p className="text-[12px] md:text-[14px] pt-2 md:pt-4 font-light">Per work: Php500 - Expert - Est. Time: 1 day</p>
+
+                <p className="text-[16px] md:text-[20px] pt-2 md:pt-4 font-normal">I am looking for an electrician that can fix the shorted plug in my sala. </p>
+
+                <div className="mt-2 md:mt-4">
+                    <p className="h-6 w-22 md:h-7 md:w-23 bg-[#ADD8F5] text-center border rounded-[10px] border-[#89A8B2] text-[#252525] font-light text-[14px] md:text-[16px]">Electrician</p>
+                </div>
+
+                <div className="mt-2 md:mt-4">
+                    <p className="text-[14px] font-light"> Kapitan Pepe, Cabanatuan City</p>
+                </div>
+
+                <hr className="bg-white mt-2 md:mt-4"  />
             </div>
         </>
     );
