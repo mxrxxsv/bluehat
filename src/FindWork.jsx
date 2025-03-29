@@ -167,6 +167,8 @@ const FindWork = () => {
 
                 <hr className="bg-white mt-2 md:mt-4" />
             </div>
+
+    
         </>
     );
 };
