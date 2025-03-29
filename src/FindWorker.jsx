@@ -28,9 +28,9 @@ const FindWorker = () => {
     <>
       <nav className="fixed w-full z-20 top-0 start-0 pt-4">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pt-4 p-4">
-          <a href="https://flowbite.com/" className="flex items-center space-x-3 rtl:space-x-reverse">
+          <Link to="/bluehat" className="flex items-center space-x-3 rtl:space-x-reverse">
             <img src={logo} className="h-10 w-28 md:h-15 md:w-40" alt="Flowbite Logo" />
-          </a>
+          </Link>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
 
             <div className="w-0 md:w-42">

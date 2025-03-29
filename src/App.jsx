@@ -13,9 +13,9 @@ function App() {
     <>
       <nav className="fixed w-full z-20 top-0 start-0 pt-4">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pt-4 p-4">
-          <a href="https://flowbite.com/" className="flex items-center space-x-3 rtl:space-x-reverse">
+          <Link to="/bluehat" className="flex items-center space-x-3 rtl:space-x-reverse">
             <img src={logo} className="h-10 w-28 md:h-15 md:w-40" alt="Flowbite Logo" />
-          </a>
+          </Link>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <button className='hidden md:block text-black mr-4 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center'>Log in</button>
             <Link
