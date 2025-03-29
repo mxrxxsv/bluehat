@@ -63,7 +63,7 @@ const FindWork = () => {
                     </a>
                     <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
 
-                        <div className="w-42">
+                        <div className="w-0 md:w-42">
 
                         </div>
 
