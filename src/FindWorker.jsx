@@ -118,8 +118,8 @@ const FindWorker = () => {
       </div>
 
       <div className="mt-5 mb-5 flex justify-center md:mt-5 md:mb-10">
-        <div className="bg-white h-73 md:h-70 w-100 md:w-220 rounded-[8px] shadow-lg p-4">
-          <div className="grid grid-cols-[120px_230px] md:grid-cols-[140px_1fr_300px] gap-3 md:gap-4">
+        <div className="bg-white h-73 w-85 md:h-70 md:w-220 rounded-[8px] shadow-lg p-4">
+          <div className="grid grid-cols-[120px_210px] md:grid-cols-[140px_1fr_300px] gap-3 md:gap-4">
 
             <div className="p-1 pt-4 rounded h-40 w-40">
               <img className="h-30 w-30" src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="" />
@@ -127,7 +127,7 @@ const FindWorker = () => {
 
             <div className="p-4 rounded">
 
-              <div className="text-[24px] font-medium">
+              <div className="text-[16px] md:text-[24px] font-medium">
                 Ezekiel Lopez
               </div>
 
@@ -152,7 +152,7 @@ const FindWorker = () => {
           </div>
 
           <div className="flex justify-end">
-            <button className="relative bottom-[37px] md:relative md:bottom-0 p-2 rounded-[6px] border-1 border-[#55b3f3] text-[14px] text-[#252525] cursor-pointer font-medium hover:text-sky-200">Save ⛉</button>
+            <button className="relative bottom-[45px] md:relative md:bottom-0 p-2 rounded-[6px] border-1 border-[#55b3f3] text-[14px] text-[#252525] cursor-pointer font-medium hover:text-sky-200">Save ⛉</button>
           </div>
 
         </div>
@@ -160,8 +160,8 @@ const FindWorker = () => {
 
 
       <div className="mt-5 mb-5 flex justify-center md:mt-5 md:mb-10">
-        <div className="bg-white h-73 md:h-70 w-100 md:w-220 rounded-[8px] shadow-lg p-4">
-          <div className="grid grid-cols-[120px_230px] md:grid-cols-[140px_1fr_300px] gap-3 md:gap-4">
+        <div className="bg-white h-73 w-85 md:h-70 md:w-220 rounded-[8px] shadow-lg p-4">
+          <div className="grid grid-cols-[120px_210px] md:grid-cols-[140px_1fr_300px] gap-3 md:gap-4">
 
             <div className="p-1 pt-4 rounded h-40 w-40">
               <img className="h-30 w-30" src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="" />
@@ -169,7 +169,7 @@ const FindWorker = () => {
 
             <div className="p-4 rounded">
 
-              <div className="text-[24px] font-medium">
+              <div className="text-[16px] md:text-[24px] font-medium">
                 James Marius Santos
               </div>
 
@@ -194,16 +194,17 @@ const FindWorker = () => {
           </div>
 
           <div className="flex justify-end">
-            <button className="relative bottom-[37px] md:relative md:bottom-0 p-2 rounded-[6px] border-1 border-[#55b3f3] text-[14px] text-[#252525] cursor-pointer font-medium hover:text-sky-200">Save ⛉</button>
+            <button className="relative bottom-[45px] md:relative md:bottom-0 p-2 rounded-[6px] border-1 border-[#55b3f3] text-[14px] text-[#252525] cursor-pointer font-medium hover:text-sky-200">Save ⛉</button>
           </div>
 
         </div>
       </div>
 
 
+
       <div className="mt-5 mb-5 flex justify-center md:mt-5 md:mb-10">
-        <div className="bg-white h-73 md:h-70 w-100 md:w-220 rounded-[8px] shadow-lg p-4">
-          <div className="grid grid-cols-[120px_230px] md:grid-cols-[140px_1fr_300px] gap-3 md:gap-4">
+        <div className="bg-white h-73 w-85 md:h-70 md:w-220 rounded-[8px] shadow-lg p-4">
+          <div className="grid grid-cols-[120px_210px] md:grid-cols-[140px_1fr_300px] gap-3 md:gap-4">
 
             <div className="p-1 pt-4 rounded h-40 w-40">
               <img className="h-30 w-30" src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="" />
@@ -211,7 +212,7 @@ const FindWorker = () => {
 
             <div className="p-4 rounded">
 
-              <div className="text-[24px] font-medium">
+              <div className="text-[16px] md:text-[24px] font-medium">
                 Richmond Gillaco
               </div>
 
@@ -236,11 +237,14 @@ const FindWorker = () => {
           </div>
 
           <div className="flex justify-end">
-            <button className="relative bottom-[37px] md:relative md:bottom-0 p-2 rounded-[6px] border-1 border-[#55b3f3] text-[14px] text-[#252525] cursor-pointer font-medium hover:text-sky-200">Save ⛉</button>
+            <button className="relative bottom-[45px] md:relative md:bottom-0 p-2 rounded-[6px] border-1 border-[#55b3f3] text-[14px] text-[#252525] cursor-pointer font-medium hover:text-sky-200">Save ⛉</button>
           </div>
 
         </div>
       </div>
+
+
+      
 
 
 
