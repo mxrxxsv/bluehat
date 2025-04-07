@@ -99,6 +99,13 @@ function App() {
 
       </div>
 
+      <div className=''>
+        <h1 className='text-center text-[30px]'>Empowering Filipino
+        Blue-Collar Workers</h1>
+      </div>
+
+
+
     </>
   )
 }
