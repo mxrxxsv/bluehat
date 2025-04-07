@@ -118,7 +118,7 @@ const FindWorker = () => {
       </div>
 
       <div className="mt-5 mb-5 flex justify-center md:mt-5 md:mb-10">
-        <div className="bg-white h-73 w-85 md:h-70 md:w-220 rounded-[8px] shadow-lg p-4">
+        <div className="bg-white h-73 w-85 md:h-77 md:w-220 rounded-[8px] shadow-lg p-4">
           <div className="grid grid-cols-[120px_210px] md:grid-cols-[140px_1fr_300px] gap-3 md:gap-4">
 
             <div className="p-1 pt-4 rounded h-40 w-40">
@@ -139,11 +139,24 @@ const FindWorker = () => {
 
             <div className="p-4 rounded">
 
-              <div className="p-2 hidden md:block">
+              <div className="p-2 hidden md:block text-center">
                 <ul>
-                  <li className="font-medium">Job Done</li>
-                  <li className="font-medium">Rating</li>
+                  <li className="font-medium">Skills</li>
+                  <ul className="p-2">
+                    <li className="h-6 w-22 md:h-7 md:w-23 bg-[#ADD8F5] text-center border rounded-[10px] border-[#89A8B2] text-[#252525] font-light text-[14px] md:text-[16px]">Electrician</li>
+                  </ul>
                   <li className="font-medium">Location</li>
+                  <ul className="p-2">
+                    <li className="font-light">Cabanatuan, Nueva Ecija</li>
+                  </ul>
+                  <li className="font-medium">Ratings</li>
+                  <ul className="flex flex-row justify-center p-2">
+                    <li>⭐</li>
+                    <li>⭐</li>
+                    <li>⭐</li>
+                    <li>⭐</li>
+                    <li>⭐</li>
+                  </ul>
                 </ul>
               </div>
 
@@ -152,7 +165,7 @@ const FindWorker = () => {
           </div>
 
           <div className="flex justify-end">
-            <button className="relative bottom-[45px] md:relative md:bottom-0 p-2 rounded-[6px] border-1 border-[#55b3f3] text-[14px] text-[#252525] cursor-pointer font-medium hover:text-sky-200">Save ⛉</button>
+            <button className="relative bottom-[45px] md:relative md:bottom-0 p-2 rounded-[6px] border-1 border-[#89A8B2] text-[14px] text-[#252525] cursor-pointer font-medium hover:text-[#89A8B2]">Save ⛉</button>
           </div>
 
         </div>
@@ -181,11 +194,24 @@ const FindWorker = () => {
 
             <div className="p-4 rounded">
 
-              <div className="p-2 hidden md:block">
+              <div className="p-2 hidden md:block text-center">
                 <ul>
-                  <li className="font-medium">Job Done</li>
-                  <li className="font-medium">Rating</li>
+                  <li className="font-medium">Skills</li>
+                  <ul className="p-2">
+                    <li></li>
+                  </ul>
                   <li className="font-medium">Location</li>
+                  <ul className="p-2">
+                    <li className="font-light">Cabiao, Nueva Ecija</li>
+                  </ul>
+                  <li className="font-medium">Ratings</li>
+                  <ul className="flex flex-row justify-center p-2">
+                    <li>⭐</li>
+                    <li>⭐</li>
+                    <li>⭐</li>
+                    <li>⭐</li>
+                    <li>⭐</li>
+                  </ul>
                 </ul>
               </div>
 
@@ -194,7 +220,7 @@ const FindWorker = () => {
           </div>
 
           <div className="flex justify-end">
-            <button className="relative bottom-[45px] md:relative md:bottom-0 p-2 rounded-[6px] border-1 border-[#55b3f3] text-[14px] text-[#252525] cursor-pointer font-medium hover:text-sky-200">Save ⛉</button>
+            <button className="relative bottom-[45px] md:relative md:bottom-0 p-2 rounded-[6px] border-1 border-[#89A8B2] text-[14px] text-[#252525] cursor-pointer font-medium hover:text-[#89A8B2]">Save ⛉</button>
           </div>
 
         </div>
@@ -224,11 +250,24 @@ const FindWorker = () => {
 
             <div className="p-4 rounded">
 
-              <div className="p-2 hidden md:block">
+              <div className="p-2 hidden md:block text-center">
                 <ul>
-                  <li className="font-medium">Job Done</li>
-                  <li className="font-medium">Rating</li>
+                  <li className="font-medium">Skills</li>
+                  <ul className="p-2">
+                    <li></li>
+                  </ul>
                   <li className="font-medium">Location</li>
+                  <ul className="p-2">
+                    <li className="font-light">Laur, Nueva Ecija</li>
+                  </ul>
+                  <li className="font-medium">Ratings</li>
+                  <ul className="flex flex-row justify-center p-2">
+                    <li>⭐</li>
+                    <li>⭐</li>
+                    <li>⭐</li>
+                    <li>⭐</li>
+                    <li>⭐</li>
+                  </ul>
                 </ul>
               </div>
 
@@ -237,14 +276,14 @@ const FindWorker = () => {
           </div>
 
           <div className="flex justify-end">
-            <button className="relative bottom-[45px] md:relative md:bottom-0 p-2 rounded-[6px] border-1 border-[#55b3f3] text-[14px] text-[#252525] cursor-pointer font-medium hover:text-sky-200">Save ⛉</button>
+            <button className="relative bottom-[45px] md:relative md:bottom-0 p-2 rounded-[6px] border-1 border-[#89A8B2] text-[14px] text-[#252525] cursor-pointer font-medium hover:text-[#89A8B2]">Save ⛉</button>
           </div>
 
         </div>
       </div>
 
 
-      
+
 
 
 
