@@ -17,7 +17,7 @@ function App() {
             <img src={logo} className="h-10 w-28 md:h-15 md:w-40" alt="Flowbite Logo" />
           </Link>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            <button className='hidden md:block text-[#252525] mr-4 focus:ring-1 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center border-2 border-sky-400 rounded-[20px] shadow-xs hover:bg-sky-400 hover:text-white cursor-pointer hover:shadow-md'>Log in</button>
+            <Link to="/workerpage" className='hidden md:block text-[#252525] mr-4 focus:ring-1 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center border-2 border-sky-400 rounded-[20px] shadow-xs hover:bg-sky-400 hover:text-white cursor-pointer hover:shadow-md'>Log in</Link>
             <Link
               to="/singnup"
               className="text-white bg-sky-500 hover:bg-sky-400 focus:ring-1 focus:outline-none focus:ring-blue-300 font-medium rounded-[10px] text-sm px-4 py-2 shadow-xs hover:shadow-md"
@@ -100,7 +100,7 @@ function App() {
       </div>
 
       <div className=''>
-        <h1 className='text-center text-[30px]'>Empowering Filipino
+        <h1 className='text-center text-[36px] md:text-[32px] text-[#252525] opacity-85 font-medium mb-20 '>Empowering Filipino
         Blue-Collar Workers</h1>
       </div>
 
