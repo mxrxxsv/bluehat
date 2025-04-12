@@ -165,7 +165,7 @@ const FindWorker = () => {
           </div>
 
           <div className="flex justify-end">
-            <button className="relative bottom-[45px] md:relative md:bottom-0 p-2 rounded-[6px] border-1 border-[#89A8B2] text-[14px] text-[#252525] cursor-pointer font-medium hover:text-[#89A8B2]">Save ⛉</button>
+            <button className="relative bottom-[45px] md:relative md:bottom-0 p-2 rounded-[6px] border-1 border-[#89A8B2] text-[14px] text-[#252525] cursor-pointer font-medium hover:text-[#89A8B2]">Save</button>
           </div>
 
         </div>
@@ -220,7 +220,7 @@ const FindWorker = () => {
           </div>
 
           <div className="flex justify-end">
-            <button className="relative bottom-[45px] md:relative md:bottom-0 p-2 rounded-[6px] border-1 border-[#89A8B2] text-[14px] text-[#252525] cursor-pointer font-medium hover:text-[#89A8B2]">Save ⛉</button>
+            <button className="relative bottom-[45px] md:relative md:bottom-0 p-2 rounded-[6px] border-1 border-[#89A8B2] text-[14px] text-[#252525] cursor-pointer font-medium hover:text-[#89A8B2]">Save</button>
           </div>
 
         </div>
@@ -276,7 +276,7 @@ const FindWorker = () => {
           </div>
 
           <div className="flex justify-end">
-            <button className="relative bottom-[45px] md:relative md:bottom-0 p-2 rounded-[6px] border-1 border-[#89A8B2] text-[14px] text-[#252525] cursor-pointer font-medium hover:text-[#89A8B2]">Save ⛉</button>
+            <button className="relative bottom-[45px] md:relative md:bottom-0 p-2 rounded-[6px] border-1 border-[#89A8B2] text-[14px] text-[#252525] cursor-pointer font-medium hover:text-[#89A8B2]">Save</button>
           </div>
 
         </div>

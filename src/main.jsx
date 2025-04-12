@@ -12,6 +12,7 @@ import ClientSignup from './ClientSignup.jsx';
 import WorkerQuestion from './WorkerQuestion.jsx';
 import FindWork from './FindWork.jsx';
 import FindWorker from './FindWorker.jsx';
+import WorkerPage from './WorkerPage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
   {
     path: "/findworker",
     element: <FindWorker />
+  },
+  {
+    path: "workerpage",
+    element: <WorkerPage />
   }
 ]);
 
