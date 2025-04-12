@@ -45,7 +45,7 @@ const router = createBrowserRouter([
     element: <FindWorker />
   },
   {
-    path: "workerpage",
+    path: "/workerpage",
     element: <WorkerPage />
   }
 ]);

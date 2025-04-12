@@ -60,9 +60,9 @@ const WorkerPage = () => {
                             <li>
                                 <Link to="/findwork" className="block py-2 px-3 text-sky-500  rounded-sm md:bg-transparent md:text-sky-500 md:p-0" aria-current="page">Find Work</Link>
                             </li>
-                            <li>
+                            {/* <li>
                                 <Link to="/findworker" className="block py-2 px-3 text-neutral-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-sky-500 md:p-0 ">Find Worker</Link>
-                            </li>
+                            </li> */}
                             <li>
                                 <a href="#" className="block py-2 px-3 text-neutral-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-sky-500 md:p-0 ">Advertisement</a>
                             </li>
@@ -81,6 +81,64 @@ const WorkerPage = () => {
                     <button type="submit" className="text-white absolute right-2.5 bottom-2.5 bg-[#55b3f3] rounded-[20px] px-4 py-2">Search</button>
                 </div>
             </form>
+
+            <div className="relative">
+                <div className="flex flex-row overflow-auto scrollbar-hide whitespace-nowrap snap-x snap-mandatory mx-5 mt-4 md:mx-80 md:my-8 gap-2">
+                    {["Location", "Job Type", "Industry", "Requirement", "Salary"].map((filter) => (
+                        <div key={filter} className="relative">
+                            <button
+                                ref={(el) => (buttonRefs.current[filter] = el)}
+                                onClick={() => toggleDropdown(filter)}
+                                className="bg-white hover:bg-[#f6f6f6] rounded-[20px] px-5 py-2.5 border border-[#89A8B2] flex items-center h-10 md:h-12">
+                                {filter}
+                                <svg className="w-2.5 h-2.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
+                                </svg>
+                            </button>
+                        </div>
+                    ))}
+                </div>
+
+                {dropdownOpen && (
+                    <div
+                        className="fixed w-44 bg-white divide-y divide-gray-100 rounded-lg shadow-lg z-50"
+                        style={{ top: dropdownPosition.top, left: dropdownPosition.left }}
+                    >
+                        <ul className="py-2 text-sm">
+                            {["Option 1", "Option 2", "Option 3"].map((option, index) => (
+                                <li key={index}>
+                                    <a href="#" className="block px-4 py-2 hover:bg-gray-100">{option}</a>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                )}
+            </div>
+
+            <div className="mx-6 md:ml-80">
+                <p className="mt-4 text-[24px]">Job's you might like</p>
+            </div>
+
+            <div className="mx-6 md:mx-80">
+                <hr className="bg-white" />
+
+                <p className="text-[14px] md:text-[14px] pt-2 font-light">1 day ago</p>
+                <p className="text-[16px] md:text-[20px] font-normal">Shortage fuse causes power outage sala.</p>
+
+                <p className="text-[12px] md:text-[14px] pt-2 md:pt-4 font-light">Per work: Php500 - Expert - Est. Time: 1 day</p>
+
+                <p className="text-[16px] md:text-[20px] pt-2 md:pt-4 font-normal">I am looking for an electrician that can fix the shorted plug in my sala. </p>
+
+                <div className="mt-2 md:mt-4">
+                    <p className="h-6 w-22 md:h-7 md:w-23 bg-[#ADD8F5] text-center border rounded-[10px] border-[#89A8B2] text-[#252525] font-light text-[14px] md:text-[16px]">Electrician</p>
+                </div>
+
+                <div className="mt-2 md:mt-4">
+                    <p className="text-[14px] font-light"> Kapitan Pepe, Cabanatuan City</p>
+                </div>
+
+                <hr className="bg-white mt-2 md:mt-4" />
+            </div>
 
         </>
     );

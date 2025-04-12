@@ -168,7 +168,7 @@ const WorkerQuestion = () => {
                                 <br />
 
                                 <button onClick={handlePrevStep} className="bg-neutral-700 hover:bg-gray-400 text-white px-6 py-2 rounded-md mr-2 cursor-pointer">Previous</button>
-                                <button onClick={() => alert("Form Submitted!")} className="bg-sky-500 hover:bg-[#ADD8F5] text-white px-6 py-2 rounded-md cursor-pointer">Submit</button>
+                                <Link to="/workerpage" onClick={() => alert("Form Submitted!")} className="bg-sky-500 hover:bg-[#ADD8F5] text-white px-6 py-2 rounded-md cursor-pointer">Submit</Link>
                             </div>
                         </div>
                     </div>
