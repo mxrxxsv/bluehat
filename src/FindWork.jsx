@@ -27,9 +27,9 @@ const FindWork = () => {
         <>
 
             <nav className="fixed w-full z-20 top-0 start-0 pt-4">
-                <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pt-4 p-4">
+                <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pt-4 p-2">
                     <Link to="/bluehat" className="flex items-center space-x-3 rtl:space-x-reverse">
-                        <img src={logo} className="h-10 w-28 md:h-15 md:w-40" alt="Flowbite Logo" />
+                        <img src={logo} className="h-15 w-28 md:h-20 md:w-40" alt="Flowbite Logo" />
                     </Link>
                     <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
 
@@ -62,7 +62,7 @@ const FindWork = () => {
                                 <Link to="/findworker" className="block py-2 px-3 text-neutral-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-sky-500 md:p-0 ">Find Worker</Link>
                             </li>
                             <li>
-                                <a href="#" className="block py-2 px-3 text-neutral-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-sky-500 md:p-0 ">Advertisement</a>
+                                <Link to="/adspage" className="block py-2 px-3 text-neutral-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-sky-500 md:p-0 ">Advertisement</Link>
                             </li>
                             <li>
                                 <a href="#" className="block py-2 px-3 text-neutral-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-sky-500 md:p-0 ">About Us</a>
@@ -72,7 +72,7 @@ const FindWork = () => {
                 </div>
             </nav>
 
-            <form className="mt-25 mx-5 md:mt-30 md:mx-80">
+            <form className="mt-30 mx-5 md:mt-35 md:mx-80">
                 <label htmlFor="default-search" className="sr-only">Search</label>
                 <div className="relative">
                     <input type="search" id="default-search" className="block h-14 w-full md:w-full p-4 pl-4 border border-[#89A8B2] rounded-[30px] bg-white" placeholder="Search Jobs" required />

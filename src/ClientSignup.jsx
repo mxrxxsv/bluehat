@@ -10,7 +10,7 @@ const ClientSignup = () => {
             <nav className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pt-4 pt-8 pl-4">
                 <Link to="/bluehat">
                     <div className="flex items-center space-x-3">
-                        <img src={logo} className="h-10 w-28 md:h-15 md:w-40" alt="BlueHat Logo" />
+                        <img src={logo} className="h-15 w-28 md:h-20 md:w-40" alt="Flowbite Logo" />
                     </div>
                 </Link>
             </nav>
