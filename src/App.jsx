@@ -97,9 +97,14 @@ function App() {
 
       </div>
 
-      <div className=''>
-        <h1 className='text-center text-[36px] md:text-[32px] text-[#252525] opacity-85 font-medium mb-20 '>Empowering Filipino
+      <div className='text-center'>
+        <h1 className=' text-[28px] md:text-[32px] text-[#252525] opacity-85 font-medium mb-4 mx-10 md:mx-0 '>Empowering Filipino
         Blue-Collar Workers</h1>
+
+        <p className='mx-5 md:mx-50 mb-15'>A platform designed for Filipino blue-hat workers to 
+        connect, showcase their skills, and find job opportunities. Engage in real-time chats, network with potential clients, and grow your professional reputation—all in one place!</p>
+
+
       </div>
 
 

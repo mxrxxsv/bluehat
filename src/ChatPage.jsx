@@ -11,6 +11,7 @@ const ChatPage = () => {
     const [dropdownOpen, setDropdownOpen] = useState(null);
     const buttonRefs = useRef({});
     const [dropdownPosition, setDropdownPosition] = useState({ top: 0, left: 0 });
+    const [showModal, setShowModal] = useState(false);
 
     const toggleDropdown = (key) => {
         setDropdownOpen((prev) => (prev === key ? null : key));
@@ -28,6 +29,8 @@ const ChatPage = () => {
 
     const sidebarRef = useRef(null);
     const buttonRef = useRef(null);
+    const dropdownRef = useRef(null);
+
 
     useEffect(() => {
         const handleClickOutside = (event) => {
@@ -35,11 +38,15 @@ const ChatPage = () => {
                 sidebarRef.current &&
                 !sidebarRef.current.contains(event.target) &&
                 buttonRef.current &&
-                !buttonRef.current.contains(event.target)
+                !buttonRef.current.contains(event.target) &&
+                dropdownRef.current &&
+                !dropdownRef.current.contains(event.target)
             ) {
                 setIsSidebarOpen(false);
+                setDropdownOpen(false);
             }
         };
+        
 
         document.addEventListener('mousedown', handleClickOutside);
         return () => {
@@ -89,6 +96,21 @@ const ChatPage = () => {
 
     const handleToggleDropdown = (index) => {
         setDropdownOpen(dropdownOpen === index ? null : index);
+    };
+
+    
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
+    const openModal = (e) => {
+        e.preventDefault();
+        setShowModal(true);
+    };
+
+    const closeModal = () => {
+        setShowModal(false);
     };
 
 
@@ -155,8 +177,12 @@ const ChatPage = () => {
             </nav>
 
 
-            <div className="mt-25 md:mt-32 ml-6 md:ml-15 w-70">
+            <div className="mt-25 md:mt-32 ml-6 md:ml-15 ,w-70 md:w-400 flex flex-row">
                 <p className="text-[32px] font-medium text-sky-500">Message</p>
+
+                <button className="ml-32 md:ml-300 p-3 bg-sky-500 rounded-[12px] text-[#f6f6f6] cursor-pointer shadow-sm"
+                onClick={openModal}
+                >Hire Now</button>
             </div>
 
 
@@ -262,7 +288,7 @@ const ChatPage = () => {
                                 </button>
 
                                 {dropdownOpen === index && (
-                                    <div className={`absolute ${msg.sender === 'me' ? 'md:left-150' : ''} right-10 top-5 md:right-160 md:top-5 z-10 bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600`}>
+                                    <div ref={dropdownRef} className={`absolute ${msg.sender === 'me' ? 'md:left-150' : ''} right-10 top-5 md:right-160 md:top-5 z-10 bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600`}>
                                         <ul className="py-2 text-sm text-gray-700 dark:text-gray-200">
                                             {['Reply', 'Forward', 'Copy', 'Report', 'Delete'].map((action, i) => (
                                                 <li key={i}>
@@ -305,6 +331,30 @@ const ChatPage = () => {
 
                 </div>
             </div>
+
+
+            {showModal && (
+                <div className="fixed inset-0 flex items-center justify-center z-50 bg-white bg-opacity-80">
+                    <div className="bg-white rounded-xl shadow-lg p-6 w-11/12 max-w-md text-center">
+                        <h2 className="text-xl font-semibold mb-4">Hire this worker?</h2>
+                        <p className="mb-6 text-gray-600">A confirmation from the worker is needed to complete the hiring process.</p>
+                        <div className="flex justify-center gap-4">
+                            
+                                <button
+                                    onClick={closeModal}
+                                    className="bg-gray-300 hover:bg-gray-400 text-gray-800 px-6 py-2 rounded-lg shadow-sm"
+                                >
+                                    Not now
+                                </button>
+
+                                <button className="bg-sky-500 hover:bg-sky-600 text-white px-6 py-2 rounded-lg shadow-sm">
+                                    Yes
+                                </button>
+                          
+                        </div>
+                    </div>
+                </div>
+            )}
 
 
 
