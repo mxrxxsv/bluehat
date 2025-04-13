@@ -191,9 +191,6 @@ const ChatPage = () => {
 
                     <div className="h-[400px] md:h-[400px] overflow-y-auto px-4">
 
-
-
-                        {/* <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-3.jpg" alt="Jese image"> */}
                         {messages.map((msg, index) => (
                             <div key={index} className={`flex items-start gap-2.5 mb-4 relative ${msg.sender === 'me' ? 'justify-end' : ''}`}>
                                 {/* Left or Right Message Based on Sender */}
