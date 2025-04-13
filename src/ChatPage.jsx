@@ -26,6 +26,27 @@ const ChatPage = () => {
         }
     }, [dropdownOpen]);
 
+    const sidebarRef = useRef(null);
+    const buttonRef = useRef(null);
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (
+                sidebarRef.current &&
+                !sidebarRef.current.contains(event.target) &&
+                buttonRef.current &&
+                !buttonRef.current.contains(event.target)
+            ) {
+                setIsSidebarOpen(false);
+            }
+        };
+
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
+
 
     const messages = [
         {
@@ -136,6 +157,7 @@ const ChatPage = () => {
 
 
             <button
+                ref={buttonRef}
                 type="button"
                 onClick={() => setIsSidebarOpen(!isSidebarOpen)}
                 className="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -152,8 +174,9 @@ const ChatPage = () => {
 
 
             <aside
+                ref={sidebarRef}
                 id="default-sidebar"
-                className={`absolute top-48 md:top-48 left-0 z-40 w-full md:w-65 h-134 transition-transform bg-white md:bg-[#f4f6f6] opacity-95 md:opacity-100 shadow-md ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'
+                className={`absolute top-48 md:top-48 left-0 z-40 w-full md:w-65 h-134 transition-transform bg-white md:bg-[#f4f6f6] md:opacity-100 opacity-98 shadow-md ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'
                     } sm:translate-x-0 overflow-clip`}
                 aria-label="Sidebar"
             >
@@ -187,13 +210,12 @@ const ChatPage = () => {
 
 
             <div class="p-4 sm:ml-64">
-                <div class="p-4 border-1 rounded-lg border-[#252525]">
+                <div class="p-4]">
 
                     <div className="h-[400px] md:h-[400px] overflow-y-auto px-4">
 
                         {messages.map((msg, index) => (
                             <div key={index} className={`flex items-start gap-2.5 mb-4 relative ${msg.sender === 'me' ? 'justify-end' : ''}`}>
-                                {/* Left or Right Message Based on Sender */}
                                 <div className="flex flex-col gap-1 w-full max-w-[320px]">
                                     <div className={`flex items-center space-x-2 rtl:space-x-reverse ${msg.sender === 'me' ? 'justify-end' : ''}`}>
                                         <span className={`text-sm font-semibold ${msg.sender === 'me' ? 'text-black' : 'text-gray-900'}`}>
@@ -207,7 +229,6 @@ const ChatPage = () => {
                                     <span className="text-sm font-normal text-gray-500 dark:text-gray-400">{msg.status}</span>
                                 </div>
 
-                                {/* Show three-dot dropdown for all messages */}
                                 <button
                                     onClick={() => handleToggleDropdown(index)}
                                     className="inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 rounded-lg"
@@ -218,7 +239,6 @@ const ChatPage = () => {
                                     </svg>
                                 </button>
 
-                                {/* Dropdown Menu */}
                                 {dropdownOpen === index && (
                                     <div className={`absolute ${msg.sender === 'me' ? 'md:left-150' : ''} right-10 top-5 md:right-160 md:top-5 z-10 bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600`}>
                                         <ul className="py-2 text-sm text-gray-700 dark:text-gray-200">
@@ -263,7 +283,7 @@ const ChatPage = () => {
 
                 </div>
 
-                <div className="bg-white h-16 p-2 m-2 border-1 rounded-[30px] md:mx-20">
+                <div className="bg-white h-16 p-2 m-2 rounded-[30px] shadow-md md:mx-20">
 
                     <form class="flex items-center max-w-sm">
                         <div class="relative w-full">
