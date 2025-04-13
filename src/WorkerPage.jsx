@@ -35,7 +35,7 @@ const WorkerPage = () => {
                     </Link>
                     <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
 
-                        <div className="w-15 pt-2 md:pt-0 md:w-43 flex flex-row gap-2 md:gap-2">
+                        <div className="w-15 pt-1 md:pt-0 md:w-43 flex flex-row gap-2 md:gap-2">
 
                             <button className="cursor-pointer">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#252525" className="size-7 md:size-6">
