@@ -155,7 +155,7 @@ const ChatPage = () => {
             </nav>
 
 
-            <div className="mt-20 md:mt-32 ml-6 md:ml-15 w-70">
+            <div className="mt-25 md:mt-32 ml-6 md:ml-15 w-70">
                 <p className="text-[32px] font-medium text-sky-500">Message</p>
             </div>
 

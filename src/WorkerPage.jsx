@@ -131,25 +131,56 @@ const WorkerPage = () => {
                 <p className="mt-4 text-[24px]">Job's you might like</p>
             </div>
 
-            <div className="mx-6 md:mx-80">
-                <hr className="bg-white" />
+            <div className="mx-6 md:mx-80 bg-white p-4 rounded-[16px] shadow-sm mt-4">
+                <p className="text-[14px] md:text-[14px] pt-2 font-light text-gray-500">2 hours ago</p>
+                <p className="text-[16px] md:text-[20px] font-normal">Aircon not cooling properly, needs cleaning/service.</p>
+                <p className="text-[12px] md:text-[14px] pt-2 md:pt-4 font-light">Per service: Php600 - Est. Time: 2–3 hrs</p>
+                <p className="text-[16px] md:text-[18px] pt-2 md:pt-4 font-normal">Looking for a technician to clean and check our window-type aircon in the bedroom.</p>
+                <div className="mt-2 md:mt-4">
+                    <p className="h-6 w-24 md:h-7 md:w-26 bg-[#ADD8F5] text-center border rounded-[10px] border-[#89A8B2] text-[#252525] font-light text-[14px] md:text-[16px]">AC Service</p>
+                </div>
+                <div className="mt-2 md:mt-4">
+                    <p className="text-[14px] font-light"> San Josef Sur, Cabanatuan City</p>
+                </div>
+            </div>
 
-                <p className="text-[14px] md:text-[14px] pt-2 font-light">1 day ago</p>
+            <div className="mx-6 md:mx-80 bg-white p-4 rounded-[16px] shadow-sm mt-4">
+                <p className="text-[14px] md:text-[14px] pt-2 font-light text-gray-500">5 hours ago</p>
+                <p className="text-[16px] md:text-[20px] font-normal">Leaking kitchen sink pipe needs quick fix.</p>
+                <p className="text-[12px] md:text-[14px] pt-2 md:pt-4 font-light">Per job: Php300 - Est. Time: 1 hr</p>
+                <p className="text-[16px] md:text-[18px] pt-2 md:pt-4 font-normal">Need someone who can fix a minor leak under the kitchen sink ASAP.</p>
+                <div className="mt-2 md:mt-4">
+                    <p className="h-6 w-20 md:h-7 md:w-24 bg-[#ADD8F5] text-center border rounded-[10px] border-[#89A8B2] text-[#252525] font-light text-[14px] md:text-[16px]">Plumber</p>
+                </div>
+                <div className="mt-2 md:mt-4">
+                    <p className="text-[14px] font-light"> Mabini Extension, Cabanatuan City</p>
+                </div>
+            </div>
+
+            <div className="mx-6 md:mx-80 bg-white p-4 rounded-[16px] shadow-sm mt-4">
+                <p className="text-[14px] md:text-[14px] pt-2 font-light text-gray-500">10 hours ago</p>
+                <p className="text-[16px] md:text-[20px] font-normal">Ceiling light fixture not working – needs replacement.</p>
+                <p className="text-[12px] md:text-[14px] pt-2 md:pt-4 font-light">Per job: Php400 - Est. Time: 1–2 hrs</p>
+                <p className="text-[16px] md:text-[18px] pt-2 md:pt-4 font-normal">Looking for an electrician to replace a busted light fixture in our living room.</p>
+                <div className="mt-2 md:mt-4">
+                    <p className="h-6 w-22 md:h-7 md:w-24 bg-[#ADD8F5] text-center border rounded-[10px] border-[#89A8B2] text-[#252525] font-light text-[14px] md:text-[16px]">Electrician</p>
+                </div>
+                <div className="mt-2 md:mt-4">
+                    <p className="text-[14px] font-light"> Phase II, Villa Luz Subdivision, Cabanatuan City</p>
+                </div>
+            </div>
+
+            <div className="mx-6 md:mx-80 bg-white p-4 rounded-[16px] shadow-sm mt-4">
+                <p className="text-[14px] md:text-[14px] pt-2 font-light text-gray-500">1 day ago</p>
                 <p className="text-[16px] md:text-[20px] font-normal">Shortage fuse causes power outage sala.</p>
-
-                <p className="text-[12px] md:text-[14px] pt-2 md:pt-4 font-light">Per work: Php500 - Expert - Est. Time: 1 day</p>
-
-                <p className="text-[16px] md:text-[20px] pt-2 md:pt-4 font-normal">I am looking for an electrician that can fix the shorted plug in my sala. </p>
-
+                <p className="text-[12px] md:text-[14px] pt-2 md:pt-4 font-light">Per work: Php500 - Est. Time: 1 day</p>
+                <p className="text-[16px] md:text-[18px] pt-2 md:pt-4 font-normal">I am looking for an electrician that can fix the shorted plug in my sala. </p>
                 <div className="mt-2 md:mt-4">
                     <p className="h-6 w-22 md:h-7 md:w-23 bg-[#ADD8F5] text-center border rounded-[10px] border-[#89A8B2] text-[#252525] font-light text-[14px] md:text-[16px]">Electrician</p>
                 </div>
-
                 <div className="mt-2 md:mt-4">
                     <p className="text-[14px] font-light"> Kapitan Pepe, Cabanatuan City</p>
                 </div>
-
-                <hr className="bg-white mt-2 md:mt-4" />
             </div>
 
         </>
