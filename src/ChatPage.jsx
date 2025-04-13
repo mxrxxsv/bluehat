@@ -220,7 +220,7 @@ const ChatPage = () => {
 
                                 {/* Dropdown Menu */}
                                 {dropdownOpen === index && (
-                                    <div className={`absolute ${msg.sender === 'me' ? 'right-40 md:left-150' : ''} right-10 top-5 md:right-160 md:top-5 z-10 bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600`}>
+                                    <div className={`absolute ${msg.sender === 'me' ? 'md:left-150' : ''} right-10 top-5 md:right-160 md:top-5 z-10 bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-40 dark:bg-gray-700 dark:divide-gray-600`}>
                                         <ul className="py-2 text-sm text-gray-700 dark:text-gray-200">
                                             {['Reply', 'Forward', 'Copy', 'Report', 'Delete'].map((action, i) => (
                                                 <li key={i}>
