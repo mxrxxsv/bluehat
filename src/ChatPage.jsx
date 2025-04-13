@@ -130,7 +130,7 @@ const ChatPage = () => {
             </nav>
 
 
-            <div className="mt-20 md:mt-32 ml-6 md:ml-15 w-100">
+            <div className="mt-20 md:mt-32 ml-6 md:ml-15 w-70">
                 <p className="text-[32px] font-medium text-sky-500">Message</p>
             </div>
 
@@ -189,7 +189,7 @@ const ChatPage = () => {
             <div class="p-4 sm:ml-64">
                 <div class="p-4 border-1 rounded-lg border-[#252525]">
 
-                    <div className="h-[500px] md:h-[400px] overflow-y-auto px-4">
+                    <div className="h-[400px] md:h-[400px] overflow-y-auto px-4">
 
 
 
