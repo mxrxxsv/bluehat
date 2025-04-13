@@ -308,7 +308,7 @@ const ChatPage = () => {
 
                 </div>
 
-                <div className="bg-white h-16 p-2 m-2 rounded-[30px] shadow-md md:mx-20">
+                <div className="bg-white h-16 md:w-240 p-2 m-2 rounded-[30px] shadow-md md:mx-0">
 
                     <form class="flex items-center max-w-sm">
                         <div class="relative w-full">
