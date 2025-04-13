@@ -138,14 +138,11 @@ const ChatPage = () => {
                     <div className={`items-center h-0.5 pb-4 justify-between w-full md:flex md:w-auto md:order-1 ${isOpen ? "block" : "hidden"}`} id="navbar-sticky">
                         <ul className="flex flex-col p-4 md:p-0 mt-4 font-regular border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row bg-[#f4f6f6]">
                             <li>
-                                <Link to="/bluehat" className="block py-2 px-3 text-neutral-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-sky-500 md:p-0 ">Home</Link>
+                                <Link to="/workerpage" className="block py-2 px-3 text-neutral-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-sky-500 md:p-0 ">Find Work</Link>
                             </li>
                             <li>
-                                <Link to="/findwork" className="block py-2 px-3 text-neutral-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-sky-500 md:p-0" >Find Work</Link>
+                                <Link to="/workerprofile" className="block py-2 px-3 text-neutral-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-sky-500 md:p-0 ">Profile</Link>
                             </li>
-                            {/* <li>
-                                    <Link to="/findworker" className="block py-2 px-3 text-neutral-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-sky-500 md:p-0 ">Find Worker</Link>
-                                </li> */}
                             <li>
                                 <a href="#" className="block py-2 px-3 text-neutral-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-sky-500 md:p-0 ">Advertisement</a>
                             </li>
@@ -285,21 +282,6 @@ const ChatPage = () => {
                                 )}
                             </div>
                         ))}
-
-                        {/* <div className="flex items-start justify-end gap-2.5 mb-4">
-                            <div className="flex flex-col gap-1 w-full max-w-[320px] text-left">
-                                <div className="flex items-center justify-end space-x-2 rtl:space-x-reverse">
-                                    <span className="text-sm font-normal text-gray-500 dark:text-gray-400">11:50</span>
-                                    <span className="text-sm font-semibold text-gray-900 dark:text-black">You</span>
-                                </div>
-                                <div className="flex flex-col leading-1.5 p-4 border-gray-200 bg-gray-200 rounded-s-xl rounded-ee-xl">
-                                    <p className="text-sm font-normal text-gray-900 dark:text-black">Sure! I’m available on April 12.</p>
-                                </div>
-                                <span className="text-sm font-normal text-gray-500 dark:text-gray-400">Seen</span>
-                            </div>
-                        </div> */}
-
-
 
 
                         {/*  */}
