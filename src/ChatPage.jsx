@@ -180,7 +180,7 @@ const ChatPage = () => {
             <div className="mt-25 md:mt-32 ml-6 md:ml-15 ,w-70 md:w-400 flex flex-row">
                 <p className="text-[32px] font-medium text-sky-500">Message</p>
 
-                <button className="ml-29 md:ml-300 p-3 bg-sky-500 rounded-[12px] text-[#f6f6f6] cursor-pointer shadow-sm"
+                <button className="ml-25 md:ml-300 p-3 bg-sky-500 rounded-[12px] text-[#f6f6f6] cursor-pointer shadow-sm"
                 onClick={openModal}
                 >Hire Now</button>
             </div>
