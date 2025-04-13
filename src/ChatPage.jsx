@@ -52,14 +52,14 @@ const ChatPage = () => {
         {
             name: 'Bonnie Green',
             time: '11:46',
-            content: 'Pwede ka ba gumawa ng april 12? ipapagawa ko sana TV ko ayaw gumana.',
+            content: 'Hello',
             status: 'Delivered',
             sender: "other",
         },
         {
             name: 'Bonnie Green',
             time: '11:56',
-            content: 'Pakisagot boss, pakyu',
+            content: 'Pwede ka ba gumawa ng april 12? ipapagawa ko sana TV ko ayaw gumana.',
             status: 'Delivered',
             sender: "other",
         },
@@ -74,6 +74,13 @@ const ChatPage = () => {
             name: 'You',
             time: '12:23',
             content: 'Sure! I’m available on April 12.',
+            status: 'Sent',
+            sender: "me",
+        },
+        {
+            name: 'You',
+            time: '12:23',
+            content: 'ano po ba sira ng TV niyo?',
             status: 'Sent',
             sender: "me",
         }
@@ -199,7 +206,25 @@ const ChatPage = () => {
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                                 </svg>
 
-                                <span class="flex-1 ms-3 whitespace-nowrap">Users</span>
+                                <span class="flex-1 ms-3 whitespace-nowrap">Mike</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-dark hover:bg-blue-200 group">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-9">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                </svg>
+
+                                <span class="flex-1 ms-3 whitespace-nowrap">Kenneth</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-dark hover:bg-blue-200 group">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-9">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                </svg>
+
+                                <span class="flex-1 ms-3 whitespace-nowrap">Paul</span>
                             </a>
                         </li>
 
