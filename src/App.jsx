@@ -15,9 +15,9 @@ function App() {
             <img src={logo} className="h-15 w-28 md:h-20 md:w-40" alt="Flowbite Logo" />
           </Link>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            <Link to="/workerpage" className='hidden md:block text-[#252525] mr-4 focus:ring-1 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center border-2 border-sky-400 rounded-[20px] shadow-xs hover:bg-sky-400 hover:text-white cursor-pointer hover:shadow-md'>Log in</Link>
+            <Link to="/bluehat/workerpage" className='hidden md:block text-[#252525] mr-4 focus:ring-1 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center border-2 border-sky-400 rounded-[20px] shadow-xs hover:bg-sky-400 hover:text-white cursor-pointer hover:shadow-md'>Log in</Link>
             <Link
-              to="/singnup"
+              to="/bluehat/singnup"
               className="text-white bg-sky-500 hover:bg-sky-400 focus:ring-1 focus:outline-none focus:ring-blue-300 font-medium rounded-[10px] text-sm px-4 py-2 shadow-xs hover:shadow-md"
             >
               Sign up
@@ -42,13 +42,13 @@ function App() {
                 <Link to="/bluehat" className="block py-2 px-3 text-sky-500  rounded-sm md:bg-transparent md:text-sky-500 md:p-0" aria-current="page">Home</Link>
               </li>
               <li>
-                <Link to="/findwork" className="block py-2 px-3 text-neutral-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-sky-500 md:p-0 ">Find Work</Link>
+                <Link to="/bluehat/findwork" className="block py-2 px-3 text-neutral-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-sky-500 md:p-0 ">Find Work</Link>
               </li>
               <li>
-                <Link to="/findworker" className="block py-2 px-3 text-neutral-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-sky-500 md:p-0 ">Find Worker</Link>
+                <Link to="/bluehat/findworker" className="block py-2 px-3 text-neutral-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-sky-500 md:p-0 ">Find Worker</Link>
               </li>
               <li>
-                <Link to="/adspage" className="block py-2 px-3 text-neutral-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-sky-500 md:p-0 ">Advertisement</Link>
+                <Link to="/bluehat/adspage" className="block py-2 px-3 text-neutral-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-sky-500 md:p-0 ">Advertisement</Link>
               </li>
               <li>
                 <a href="#" className="block py-2 px-3 text-neutral-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-sky-500 md:p-0 ">About Us</a>
@@ -89,7 +89,7 @@ function App() {
           I'm looking for
         </p>
 
-        <Link to="/findwork" className='absolute h-13 w-88 bg-[#FFFFFF] border-2 border-solid rounded-[20px] text-start pt-3 pl-4 shadow-md border-[#89A8B2] opacity-80
+        <Link to="/bluehat/findwork" className='absolute h-13 w-88 bg-[#FFFFFF] border-2 border-solid rounded-[20px] text-start pt-3 pl-4 shadow-md border-[#89A8B2] opacity-80
                            -top-[-160vw] left-[2vw]
                            md:-top-[-38vw] md:left-[53.5vw] '>
           Any Worker Field <span className='ml-45'>⋮</span>

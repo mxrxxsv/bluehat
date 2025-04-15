@@ -23,43 +23,43 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "/singnup",
+    path: "/bluehat/singnup", 
     element: <Singup />
   },
   {
-    path: "/workersignup",
+    path: "/bluehat/workersignup",
     element: <WorkerSignup />
   },
   {
-    path: "/clientsignup",
+    path: "/bluehat/clientsignup",
     element: <ClientSignup />
   },
   {
-    path: "/workerquestion",
+    path: "/bluehat/workerquestion",
     element: <WorkerQuestion />
   },
   {
-    path: "/findwork",
+    path: "/bluehat/findwork",
     element: <FindWork />
   },
   {
-    path: "/findworker",
+    path: "/bluehat/findworker",
     element: <FindWorker />
   },
   {
-    path: "/workerpage",
+    path: "/bluehat/workerpage",
     element: <WorkerPage />
   },
   {
-    path: "/chatpage",
+    path: "/bluehat/chatpage",
     element: <ChatPage />
   },
   {
-    path: "/workerprofile",
+    path: "/bluehat/workerprofile",
     element: <WorkerProfile />
   },
   {
-    path: "/adspage",
+    path: "/bluehat/adspage",
     element: <AdsPage />
   }
 ]);

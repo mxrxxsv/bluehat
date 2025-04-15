@@ -79,12 +79,12 @@ const WorkerSignup = () => {
                         <h2 className="text-xl font-semibold mb-4">Verify Account</h2>
                         <p className="mb-6 text-gray-600">Do you want to verifiy your profile now?</p>
                         <div className="flex justify-center gap-4">
-                            <Link to="/workerquestion">
+                            <Link to="/bluehat/workerquestion">
                                 <button className="bg-sky-500 hover:bg-sky-600 text-white px-6 py-2 rounded-lg shadow-sm">
                                     Yes
                                 </button>
                             </Link>
-                            <Link to="/workerpage" >
+                            <Link to="/bluehat/workerpage" >
                             <button
                                 onClick={closeModal}
                                 className="bg-gray-300 hover:bg-gray-400 text-gray-800 px-6 py-2 rounded-lg shadow-sm"
